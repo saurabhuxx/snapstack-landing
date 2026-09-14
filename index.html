@@ -8,7 +8,7 @@
       name="description"
       content="Capture full-page, visible-area, and selected screenshots in Chrome. Organize them into projects and sessions, then manage everything locally with SnapStack."
     />
-    <meta name="theme-color" content="#0b1018" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="/icons/icon32.png" sizes="32x32" />
     <link rel="icon" href="/icons/icon16.png" sizes="16x16" />
     <link rel="apple-touch-icon" href="/icons/icon128.png" />
@@ -49,8 +49,8 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-shell">
-      <div class="header-inner">
-        <a class="brand" href="#">
+        <div class="header-inner">
+          <a class="brand" href="#">
           <img src="/icons/mark.png" width="48" height="48" alt="" />
           SnapStack
         </a>
@@ -75,19 +75,18 @@
             Add to Chrome
           </a>
         </nav>
-      </div>
+        </div>
       </div>
     </header>
 
     <main id="main">
       <section class="hero">
-        <div class="wrap hero-grid">
+        <div class="wrap">
           <div class="hero-copy">
             <p class="announce">Free · Local-first · No account</p>
-            <p class="eyebrow">Screenshot Chrome extension</p>
             <h1>Capture screenshots. Keep them organized.</h1>
             <p class="lede">
-              SnapStack is a simple Chrome screenshot extension for capturing a full page screenshot, the visible area, or a selected area — then organizing those webpage screenshots locally into projects.
+              A simple Chrome screenshot extension for full page, visible area, and selected area captures — then organize them locally into projects.
             </p>
             <div class="hero-actions">
               <a
@@ -101,18 +100,31 @@
               <p class="hero-note">Free Chrome extension · Local-first · No account required</p>
             </div>
           </div>
-          <figure class="shot">
-            <picture>
-              <source type="image/webp" srcset="/images/hero-captures.webp" />
-              <img
-                src="/images/hero-captures.jpg"
-                width="808"
-                height="998"
-                fetchpriority="high"
-                alt="SnapStack Chrome extension popup showing Screenshot, Select area, and Full page capture buttons, plus two saved webpage screenshots from a site session"
-              />
-            </picture>
-          </figure>
+          <div class="hero-stage">
+            <figure class="shot">
+              <picture>
+                <source type="image/webp" srcset="/images/hero-captures.webp" />
+                <img
+                  src="/images/hero-captures.jpg"
+                  width="808"
+                  height="998"
+                  fetchpriority="high"
+                  alt="SnapStack Chrome extension popup showing Screenshot, Select area, and Full page capture buttons, plus two saved webpage screenshots from a site session"
+                />
+              </picture>
+            </figure>
+            <figure class="shot">
+              <picture>
+                <source type="image/webp" srcset="/images/projects-active.webp" />
+                <img
+                  src="/images/projects-active.jpg"
+                  width="812"
+                  height="1026"
+                  alt="SnapStack Projects settings with a design-inspiration project selected"
+                />
+              </picture>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -120,37 +132,22 @@
         <div class="wrap section-narrow">
           <p class="eyebrow">The pile-up</p>
           <h2 id="problem-title">Screenshots shouldn’t live forever in your Downloads folder.</h2>
-          <p class="section-copy" style="margin-top: 18px">
-            You take a screenshot. Then another. And another. Soon Downloads is full of files you don’t remember naming.
+          <p class="section-copy">
+            You take a screenshot. Then another. And another. Soon Downloads is full of files you don’t remember naming. SnapStack gives those screenshots a place to go.
           </p>
-          <p class="section-copy">SnapStack gives those screenshots a place to go.</p>
         </div>
       </section>
 
-      <section class="section" id="capture" aria-labelledby="capture-title">
-        <div class="wrap split">
-          <div class="copy">
+      <section class="section section-alt" id="capture" aria-labelledby="capture-title">
+        <div class="wrap">
+          <div class="section-head">
             <p class="eyebrow">Capture</p>
             <h2 id="capture-title">Capture any part of a webpage</h2>
-            <p class="section-copy" style="margin-top: 16px">
+            <p class="section-copy">
               Open the extension and pick how you want to capture the page: a full page screenshot, the visible area, or a selected area.
             </p>
           </div>
-          <figure class="shot">
-            <picture>
-              <source type="image/webp" srcset="/images/capture-empty.webp" />
-              <img
-                src="/images/capture-empty.jpg"
-                width="802"
-                height="1018"
-                loading="lazy"
-                alt="SnapStack capture screen with Full page, Screenshot, and Select area controls, and an empty state that says nothing captured yet"
-              />
-            </picture>
-          </figure>
-        </div>
-        <div class="wrap">
-            <div class="capture-grid">
+          <div class="capture-grid">
               <article class="capture-card">
                 <h3>
                   <span class="icon-well" aria-hidden="true">
@@ -184,16 +181,16 @@
                 </h3>
                 <p>Drag to select the exact part of the webpage you want. Useful when you only need one block, not the whole site.</p>
               </article>
-            </div>
+          </div>
         </div>
       </section>
 
       <section class="section" id="organize" aria-labelledby="organize-title">
-        <div class="wrap split reverse">
-          <div class="copy">
+        <div class="wrap">
+          <div class="section-head">
             <p class="eyebrow">Projects</p>
             <h2 id="organize-title">Stop searching. Start organizing.</h2>
-            <p class="section-copy" style="margin-top: 16px">
+            <p class="section-copy">
               Create a project and keep related screenshots together. A project is a piece of work, not a website — shots from several sites can share one folder, while each site still groups into its own session.
             </p>
             <div class="chip-row" aria-label="Example project types">
@@ -205,58 +202,42 @@
               <span class="chip">Personal projects</span>
             </div>
           </div>
-          <figure class="shot">
-            <picture>
-              <source type="image/webp" srcset="/images/projects-active.webp" />
-              <img
-                src="/images/projects-active.jpg"
-                width="812"
-                height="1026"
-                loading="lazy"
-                alt="SnapStack Settings with Projects selected, showing an active design-inspiration project saving to Downloads / SnapStack / design-inspiration"
-              />
-            </picture>
-          </figure>
+          <div class="mosaic">
+            <figure class="shot">
+              <picture>
+                <source type="image/webp" srcset="/images/capture-empty.webp" />
+                <img
+                  src="/images/capture-empty.jpg"
+                  width="802"
+                  height="1018"
+                  loading="lazy"
+                  alt="SnapStack capture screen with Full page, Screenshot, and Select area controls"
+                />
+              </picture>
+            </figure>
+            <figure class="shot">
+              <picture>
+                <source type="image/webp" srcset="/images/projects-naming.webp" />
+                <img
+                  src="/images/projects-naming.jpg"
+                  width="818"
+                  height="1028"
+                  loading="lazy"
+                  alt="Naming a new SnapStack project called design-inspiration"
+                />
+              </picture>
+            </figure>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="local" aria-labelledby="local-title">
+      <section class="section section-alt" id="local" aria-labelledby="local-title">
         <div class="wrap split">
           <div class="copy">
             <p class="eyebrow">Local-first</p>
             <h2 id="local-title">Your screenshots. Your computer.</h2>
             <p class="section-copy" style="margin-top: 16px">
               SnapStack is built for local screenshot management. Captures, projects, and folders stay on your device. There is no account to create and no cloud library to log into.
-            </p>
-            <p class="section-copy" style="margin-top: 12px">
-              The extension reminds you of that in the product itself: your screenshots stay on your device.
-            </p>
-          </div>
-          <figure class="shot">
-            <picture>
-              <source type="image/webp" srcset="/images/projects-naming.webp" />
-              <img
-                src="/images/projects-naming.jpg"
-                width="818"
-                height="1028"
-                loading="lazy"
-                alt="Naming a new SnapStack project called design-inspiration, with screenshots filing into that project folder on the computer"
-              />
-            </picture>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section" id="save" aria-labelledby="save-title">
-        <div class="wrap split reverse">
-          <div class="copy">
-            <p class="eyebrow">Save location</p>
-            <h2 id="save-title">Save your way</h2>
-            <p class="section-copy" style="margin-top: 16px">
-              Choose how this screenshot tool for Chrome writes files. Save into Chrome Downloads, use SnapStack folders organized by project inside Downloads, or ask Chrome where each file should go.
-            </p>
-            <p class="section-copy" style="margin-top: 12px">
-              Save several captures at once, export a session as a ZIP, and keep working with the folders you already have on disk.
             </p>
           </div>
           <figure class="shot">
@@ -267,17 +248,29 @@
                 width="816"
                 height="1018"
                 loading="lazy"
-                alt="SnapStack save location settings with Chrome Downloads, SnapStack folders organized by project, and Ask every time"
+                alt="SnapStack save location settings with Chrome Downloads, SnapStack folders, and Ask every time"
               />
             </picture>
           </figure>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="who-title">
+      <section class="section" id="save" aria-labelledby="save-title">
+        <div class="wrap section-head">
+          <p class="eyebrow">Save location</p>
+          <h2 id="save-title">Save your way</h2>
+          <p class="section-copy">
+            Choose how this screenshot tool for Chrome writes files. Save into Chrome Downloads, use SnapStack folders organized by project inside Downloads, or ask Chrome where each file should go. Save several captures at once, export a session as a ZIP, and keep working with the folders you already have on disk.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt" aria-labelledby="who-title">
         <div class="wrap">
+          <div class="section-head">
             <p class="eyebrow">Who it’s for</p>
             <h2 id="who-title">Built for people who take a lot of screenshots</h2>
+          </div>
           <div class="use-grid">
             <article class="use-card">
               <h3>Designers</h3>
@@ -305,8 +298,10 @@
 
       <section class="section" id="how" aria-labelledby="how-title">
         <div class="wrap">
+          <div class="section-head">
             <p class="eyebrow">Three steps</p>
             <h2 id="how-title">How it works</h2>
+          </div>
           <div class="steps">
             <article class="step">
               <p class="step-label">01 — Capture</p>
@@ -363,33 +358,69 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="faq-title">
+      <section class="section section-alt" aria-labelledby="faq-title">
         <div class="wrap section-narrow">
-          <p class="eyebrow">Questions</p>
+          <p class="eyebrow">Questions? Answers.</p>
           <h2 id="faq-title">A few straight answers</h2>
           <div class="faq">
             <details>
               <summary>What is SnapStack?</summary>
               <p>
-                SnapStack is a screenshot organizer and Chrome screenshot tool. It captures webpage screenshots and keeps them on your computer, grouped by project and by site session.
+                SnapStack is a Chrome screenshot extension that helps you capture, organize, and manage screenshots locally. You can capture full webpages, visible areas, or specific parts of a page.
               </p>
             </details>
             <details>
-              <summary>Can I capture a full webpage in Chrome?</summary>
+              <summary>Can I take a full-page screenshot in Chrome?</summary>
               <p>
-                Yes. Use Full page for a complete scroll, Screenshot for the visible area, or Select area when you only want part of the page.
+                Yes. SnapStack lets you capture an entire webpage from top to bottom, making it easy to save full-page screenshots without manually stitching images together.
               </p>
             </details>
             <details>
-              <summary>Does SnapStack upload my screenshots?</summary>
+              <summary>Can I capture only a specific area of a webpage?</summary>
               <p>
-                SnapStack is local-first. Screenshots and project folders stay on your device. You do not need an account to use the extension.
+                Yes. You can select a specific area of the webpage and capture only what you need.
               </p>
             </details>
             <details>
-              <summary>How do I export screenshots?</summary>
+              <summary>Where are my SnapStack screenshots saved?</summary>
               <p>
-                Save captures individually or together, and export a session as a ZIP when you want a single archive.
+                SnapStack is designed for local screenshot management. You can choose how and where your screenshots are saved based on the available save options.
+              </p>
+            </details>
+            <details>
+              <summary>Can I organize screenshots into projects?</summary>
+              <p>
+                Yes. You can create projects and keep screenshots related to a specific project together instead of having them scattered across your Downloads folder.
+              </p>
+            </details>
+            <details>
+              <summary>What are screenshot sessions?</summary>
+              <p>
+                Sessions let you group screenshots taken during a particular task or browsing session, making it easier to keep related screenshots together.
+              </p>
+            </details>
+            <details>
+              <summary>Can I save multiple screenshots at once?</summary>
+              <p>
+                Yes. SnapStack supports bulk actions so you can manage and save multiple screenshots together instead of handling each file individually.
+              </p>
+            </details>
+            <details>
+              <summary>Can I export my screenshots?</summary>
+              <p>
+                Yes. You can export your screenshots together as a ZIP file when you need to move or share a collection of screenshots.
+              </p>
+            </details>
+            <details>
+              <summary>Does SnapStack upload my screenshots to the cloud?</summary>
+              <p>
+                No. SnapStack is built around local screenshot management. Your screenshots are handled locally rather than being uploaded to a SnapStack cloud service.
+              </p>
+            </details>
+            <details>
+              <summary>Is SnapStack free to use?</summary>
+              <p>
+                SnapStack is available as a Chrome extension. You can install it from the Chrome Web Store and start using it to capture and organize your screenshots.
               </p>
             </details>
           </div>
@@ -417,8 +448,11 @@
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <p>SnapStack. Screenshots stay on your device.</p>
-        <p>Made with love by saurabhuxx</p>
+        <p>Made with love by <a href="https://saurabhuxx.com" rel="noopener noreferrer">saurabhuxx</a></p>
       </div>
+      <p class="wordmark" aria-hidden="true">
+        <span>S</span><span>n</span><span>a</span><span>p</span><span>S</span><span>t</span><span>a</span><span>c</span><span>k</span>
+      </p>
     </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>

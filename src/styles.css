@@ -414,7 +414,10 @@ h2 {
 #organize,
 #how,
 #local,
-#save {
+#save,
+#problem,
+#who,
+#faq {
   scroll-margin-top: 84px;
 }
 
@@ -672,6 +675,34 @@ h2 {
 .cta-panel p {
   margin: 14px auto 24px;
   color: hsl(var(--text-secondary));
+}
+
+.sitemap-page {
+  padding-top: 48px;
+}
+
+.sitemap-page h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.sitemap-list {
+  max-width: 36rem;
+  margin: 8px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitemap-list a {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid hsl(var(--border));
+  color: hsl(var(--text));
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.sitemap-list a:hover {
+  color: hsl(var(--google));
 }
 
 .site-footer {

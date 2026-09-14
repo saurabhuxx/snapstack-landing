@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        sitemap: resolve(__dirname, 'sitemap.html'),
+        sitemap: resolve(__dirname, 'site-map.html'),
       },
     },
   },

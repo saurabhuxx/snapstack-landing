@@ -833,6 +833,13 @@ h2 {
   .hero-stage {
     grid-template-columns: 1fr;
   }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

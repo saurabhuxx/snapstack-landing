@@ -417,6 +417,7 @@ h2 {
 #save,
 #problem,
 #who,
+#reviews,
 #faq {
   scroll-margin-top: 84px;
 }
@@ -632,6 +633,93 @@ h2 {
   margin-bottom: 16px;
 }
 
+.reviews-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.review-card {
+  padding: 22px;
+  background: hsl(var(--surface-raised));
+  border: 1px solid hsl(var(--border));
+  border-radius: 18px;
+  box-shadow: 0 10px 30px hsl(210 40% 28% / 0.05);
+}
+
+.review-card header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.review-avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: hsl(0 0% 100%);
+  font-size: 16px;
+  font-weight: 650;
+  background: hsl(var(--avatar, 217 89% 51%));
+}
+
+.review-meta {
+  min-width: 0;
+}
+
+.review-meta strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.review-stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+  color: hsl(var(--warm));
+}
+
+.review-stars svg {
+  width: 14px;
+  height: 14px;
+}
+
+.review-stars time {
+  color: hsl(var(--text-muted));
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.review-card blockquote {
+  margin: 0;
+  color: hsl(var(--text-secondary));
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.review-source {
+  margin: 24px 0 0;
+  text-align: center;
+  color: hsl(var(--text-muted));
+  font-size: 13px;
+}
+
+.review-source a {
+  color: hsl(var(--google));
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.review-source a:hover {
+  text-decoration: underline;
+}
+
 .faq {
   display: grid;
   gap: 10px;
@@ -763,7 +851,8 @@ h2 {
   }
 
   .use-grid,
-  .mosaic {
+  .mosaic,
+  .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -788,6 +877,15 @@ h2 {
 
   .split.reverse .copy {
     order: 2;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-card:first-child,
+  .review-card:nth-child(5) {
+    grid-column: 1 / -1;
   }
 }
 
